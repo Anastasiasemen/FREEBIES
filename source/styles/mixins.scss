@@ -1,0 +1,45 @@
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+  
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin btn_opacity {
+  border: 1px solid #F53855;
+  box-sizing: border-box;
+  border-radius: 50px;
+  font-family: $FontBold;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F53855;
+  background-color: transparent;
+  padding: 13px 45px;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #F53838;
+    box-shadow: 0 15px 5px -5px rgba(245, 56, 56, 0.35);
+    color: #FFFFFF;
+  }
+}
+
+@mixin btn_primary {
+  background-color: #F53838;
+  border-radius: 10px;
+  font-family: $FontBold;
+  font-size: 16px;
+  line-height: 25px;
+  color: #FFFFFF;
+  padding: 17px 77px;
+  border: none;
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0 12px 5px -5px rgba(245, 56, 56, 0.35);
+  }
+}

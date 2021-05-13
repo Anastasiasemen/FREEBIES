@@ -1,0 +1,35 @@
+.navbar.container {
+    @include flex-row;
+    .navbar_menu {
+        ul {
+            @include flex-row;
+            font-family: $FontRegular;
+            font-size: 16px;
+            line-height: 19px;
+            color: $grey; 
+            list-style-type: none;
+            li {
+                margin: 20px;
+                &:hover,
+                &:focus {
+                    font-family: $FontBold;  
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+    .navbar_registration {
+        a {
+            font-family: $FontBold;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 19px;
+            color: #0B132A;
+            margin-right: 30px;
+            text-decoration: none;
+        }
+        button {
+            @include btn_opacity;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.header.container {
+    @include flex-row;
+    margin-top: 98px;
+    justify-content: space-between;
+    .container_left_block {
+        @include flex-column;
+        width: 35%;
+        .title {
+            font-family: $FontBold;
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 70px;
+            color: $primarycolor;
+            margin-bottom: 20px;
+            span {
+                font-weight: 800; 
+                overflow-y: hidden;
+                overflow-x: auto; 
+            }
+        }
+        .descr {
+            font-family: $FontRegular;
+            font-size: 16px;
+            line-height: 30px;
+            color: $grey;
+            margin-bottom: 50px;
+        }
+        button {
+            @include btn_primary;
+        }
+    }
+}
+.company_achievements {
+    margin-top: 105px;
+    margin-bottom: 64px;
+    box-shadow: 0 50px 70px -70px #0D1025;
+    .container {
+        @include flex-row;
+        justify-content: center;
+        padding: 67px 91px;
+        .item:not(:last-child) {
+            border-right: 2px solid #EEEFF2;
+        }
+        .item {
+            @include flex-row;
+            padding: 67px 130px;
+            .img {
+                margin-right: 36px;
+            }
+            .quantity {
+                font-family: $FontBold;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 30px;
+                color: #0B132A;
+            }
+            .text {
+                font-family: $FontRegular;
+                font-size: 20px;
+                line-height: 30px;
+                color: #4F5665;
+            }
+        }
+    }
+}
